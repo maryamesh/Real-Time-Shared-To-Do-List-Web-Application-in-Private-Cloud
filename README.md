@@ -44,7 +44,7 @@ The application consists of the following components running as Docker container
 
 | Component        | Role                                                    | Number of Replicas |
 |------------------|---------------------------------------------------------|--------------------|
-| **NGINX**        | Reverse proxy and load balancer for HTTP/WebSocket traffic | 3                  |
+| **NGINX**        | Reverse proxy and load balancer for HTTP/WebSocket traffic | 2                 |
 | **Flask Backend**| Handles task management, WebSocket connections, and real-time event handling | 3                  |
 | **Redis**        | In-memory data store and Pub/Sub message broker to synchronize backend replicas | 1                  |
 | **Socket.IO**    | Enables real-time bidirectional communication between clients and backend | Integrated in Flask backend |
